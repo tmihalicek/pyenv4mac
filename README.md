@@ -10,3 +10,7 @@ PYTHON_CONFIGURE_OPTS="--enable-framework" \
     LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix libffi)/lib" \
     pyenv install -v 3.10.1
 # pyenv4mac
+
+PYTHON_CONFIGURE_OPTS="--enable-framework" \
+pyenv install 3.9.10
+pyenv global 3.9.10
